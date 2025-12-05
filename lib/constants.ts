@@ -1,0 +1,98 @@
+// Translations
+export const translations = {
+  'pt-BR': {
+    appTitle: '᚛ Leitor de Runas ᚛',
+    shuffleMode: 'Embaralhar', selectMode: 'Selecionar', readMode: 'Ler',
+    shuffleInstruction: '🌀 Movimentos circulares para embaralhar',
+    selectInstruction: '👆 Toque nas runas para selecionar',
+    readInstructionWithSelection: '🔮 Revelar {count} runa(s) selecionada(s)',
+    readInstructionNoSelection: '🔮 Selecione runas primeiro',
+    revealNext: 'Revelar', revealAll: 'Todas', resetDeck: 'Reiniciar', spreadCards: 'Espalhar',
+    viewDeck: 'Ver Deck', back: '← Voltar',
+    spread: 'Leitura',
+    singleRune: 'Runa Única', pastPresentFuture: 'Passado/Presente/Futuro',
+    situationActionOutcome: 'Situação/Ação/Resultado', mindBodySpirit: 'Mente/Corpo/Espírito',
+    embraceReleaseFocus: 'Abraçar/Liberar/Focar', fiveRune: 'Cinco Runas', celticCross: 'Cruz Celta',
+    positions: { guidance: 'Orientação', past: 'Passado', present: 'Presente', future: 'Futuro', situation: 'Situação', action: 'Ação', outcome: 'Resultado', mind: 'Mente', body: 'Corpo', spirit: 'Espírito', embrace: 'Abraçar', release: 'Liberar', focus: 'Focar', challenge: 'Desafio', path: 'Caminho', hidden: 'Oculto', advice: 'Conselho', core: 'Central', desire: 'Desejo', subconscious: 'Subconsciente', influences: 'Influências', attitude: 'Atitude', hopes: 'Esperanças' },
+    selected: 'selecionadas',
+    revealedRunes: '✦ Runas Reveladas ✦',
+    deckTitle: '᚛ Elder Futhark ᚛', firstAett: 'Primeiro Aett', secondAett: 'Segundo Aett', thirdAett: 'Terceiro Aett',
+  },
+  'en': {
+    appTitle: '᚛ Rune Reader ᚛',
+    shuffleMode: 'Shuffle', selectMode: 'Select', readMode: 'Read',
+    shuffleInstruction: '🌀 Circular motions to shuffle',
+    selectInstruction: '👆 Tap runes to select',
+    readInstructionWithSelection: '🔮 Reveal {count} selected rune(s)',
+    readInstructionNoSelection: '🔮 Select runes first',
+    revealNext: 'Reveal', revealAll: 'All', resetDeck: 'Reset', spreadCards: 'Spread',
+    viewDeck: 'View Deck', back: '← Back',
+    spread: 'Spread',
+    singleRune: 'Single Rune', pastPresentFuture: 'Past/Present/Future',
+    situationActionOutcome: 'Situation/Action/Outcome', mindBodySpirit: 'Mind/Body/Spirit',
+    embraceReleaseFocus: 'Embrace/Release/Focus', fiveRune: 'Five Rune', celticCross: 'Celtic Cross',
+    positions: { guidance: 'Guidance', past: 'Past', present: 'Present', future: 'Future', situation: 'Situation', action: 'Action', outcome: 'Outcome', mind: 'Mind', body: 'Body', spirit: 'Spirit', embrace: 'Embrace', release: 'Release', focus: 'Focus', challenge: 'Challenge', path: 'Path', hidden: 'Hidden', advice: 'Advice', core: 'Core', desire: 'Desire', subconscious: 'Subconscious', influences: 'Influences', attitude: 'Attitude', hopes: 'Hopes' },
+    selected: 'selected',
+    revealedRunes: '✦ Revealed Runes ✦',
+    deckTitle: '᚛ Elder Futhark ᚛', firstAett: 'First Aett', secondAett: 'Second Aett', thirdAett: 'Third Aett',
+  }
+};
+
+export const runeData = {
+  'pt-BR': [
+    { id: 'fehu', name: "Fehu", symbol: "ᚠ", meaning: "Riqueza", description: "Abundância e prosperidade" },
+    { id: 'uruz', name: "Uruz", symbol: "ᚢ", meaning: "Força", description: "Força primordial e coragem" },
+    { id: 'thurisaz', name: "Thurisaz", symbol: "ᚦ", meaning: "Espinho", description: "Proteção e conflito" },
+    { id: 'ansuz', name: "Ansuz", symbol: "ᚨ", meaning: "Divino", description: "Sabedoria e inspiração" },
+    { id: 'raidho', name: "Raidho", symbol: "ᚱ", meaning: "Jornada", description: "Viagem e ciclos da vida" },
+    { id: 'kenaz', name: "Kenaz", symbol: "ᚲ", meaning: "Tocha", description: "Conhecimento e iluminação" },
+    { id: 'gebo', name: "Gebo", symbol: "ᚷ", meaning: "Presente", description: "Equilíbrio e parceria" },
+    { id: 'wunjo', name: "Wunjo", symbol: "ᚹ", meaning: "Alegria", description: "Alegria e harmonia" },
+    { id: 'hagalaz', name: "Hagalaz", symbol: "ᚺ", meaning: "Granizo", description: "Crise e transformação" },
+    { id: 'nauthiz', name: "Nauthiz", symbol: "ᚾ", meaning: "Necessidade", description: "Restrição e crescimento" },
+    { id: 'isa', name: "Isa", symbol: "ᛁ", meaning: "Gelo", description: "Pausa e introspecção" },
+    { id: 'jera', name: "Jera", symbol: "ᛃ", meaning: "Colheita", description: "Ciclos e recompensas" },
+    { id: 'eihwaz', name: "Eihwaz", symbol: "ᛇ", meaning: "Teixo", description: "Resiliência e transformação" },
+    { id: 'perthro', name: "Perthro", symbol: "ᛈ", meaning: "Destino", description: "Mistério e acaso" },
+    { id: 'algiz', name: "Algiz", symbol: "ᛉ", meaning: "Proteção", description: "Proteção divina" },
+    { id: 'sowilo', name: "Sowilo", symbol: "ᛊ", meaning: "Sol", description: "Sucesso e vitória" },
+    { id: 'tiwaz', name: "Tiwaz", symbol: "ᛏ", meaning: "Justiça", description: "Honra e coragem" },
+    { id: 'berkano', name: "Berkano", symbol: "ᛒ", meaning: "Nascimento", description: "Novos começos" },
+    { id: 'ehwaz', name: "Ehwaz", symbol: "ᛖ", meaning: "Cavalo", description: "Parceria e confiança" },
+    { id: 'mannaz', name: "Mannaz", symbol: "ᛗ", meaning: "Humanidade", description: "Consciência e amizade" },
+    { id: 'laguz', name: "Laguz", symbol: "ᛚ", meaning: "Água", description: "Intuição e fluxo" },
+    { id: 'ingwaz', name: "Ingwaz", symbol: "ᛜ", meaning: "Fertilidade", description: "Completude e potencial" },
+    { id: 'dagaz', name: "Dagaz", symbol: "ᛞ", meaning: "Dia", description: "Despertar e avanço" },
+    { id: 'othala', name: "Othala", symbol: "ᛟ", meaning: "Lar", description: "Herança e ancestralidade" }
+  ],
+  'en': [
+    { id: 'fehu', name: "Fehu", symbol: "ᚠ", meaning: "Wealth", description: "Abundance and prosperity" },
+    { id: 'uruz', name: "Uruz", symbol: "ᚢ", meaning: "Strength", description: "Primal strength and courage" },
+    { id: 'thurisaz', name: "Thurisaz", symbol: "ᚦ", meaning: "Thorn", description: "Protection and conflict" },
+    { id: 'ansuz', name: "Ansuz", symbol: "ᚨ", meaning: "Divine", description: "Wisdom and inspiration" },
+    { id: 'raidho', name: "Raidho", symbol: "ᚱ", meaning: "Journey", description: "Travel and life cycles" },
+    { id: 'kenaz', name: "Kenaz", symbol: "ᚲ", meaning: "Torch", description: "Knowledge and illumination" },
+    { id: 'gebo', name: "Gebo", symbol: "ᚷ", meaning: "Gift", description: "Balance and partnership" },
+    { id: 'wunjo', name: "Wunjo", symbol: "ᚹ", meaning: "Joy", description: "Joy and harmony" },
+    { id: 'hagalaz', name: "Hagalaz", symbol: "ᚺ", meaning: "Hail", description: "Crisis and transformation" },
+    { id: 'nauthiz', name: "Nauthiz", symbol: "ᚾ", meaning: "Need", description: "Constraint and growth" },
+    { id: 'isa', name: "Isa", symbol: "ᛁ", meaning: "Ice", description: "Pause and introspection" },
+    { id: 'jera', name: "Jera", symbol: "ᛃ", meaning: "Harvest", description: "Cycles and rewards" },
+    { id: 'eihwaz', name: "Eihwaz", symbol: "ᛇ", meaning: "Yew", description: "Resilience and transformation" },
+    { id: 'perthro', name: "Perthro", symbol: "ᛈ", meaning: "Fate", description: "Mystery and chance" },
+    { id: 'algiz', name: "Algiz", symbol: "ᛉ", meaning: "Protection", description: "Divine protection" },
+    { id: 'sowilo', name: "Sowilo", symbol: "ᛊ", meaning: "Sun", description: "Success and victory" },
+    { id: 'tiwaz', name: "Tiwaz", symbol: "ᛏ", meaning: "Justice", description: "Honor and courage" },
+    { id: 'berkano', name: "Berkano", symbol: "ᛒ", meaning: "Birth", description: "New beginnings" },
+    { id: 'ehwaz', name: "Ehwaz", symbol: "ᛖ", meaning: "Horse", description: "Partnership and trust" },
+    { id: 'mannaz', name: "Mannaz", symbol: "ᛗ", meaning: "Humanity", description: "Consciousness and friendship" },
+    { id: 'laguz', name: "Laguz", symbol: "ᛚ", meaning: "Water", description: "Intuition and flow" },
+    { id: 'ingwaz', name: "Ingwaz", symbol: "ᛜ", meaning: "Fertility", description: "Completion and potential" },
+    { id: 'dagaz', name: "Dagaz", symbol: "ᛞ", meaning: "Day", description: "Awakening and breakthrough" },
+    { id: 'othala', name: "Othala", symbol: "ᛟ", meaning: "Home", description: "Heritage and ancestry" }
+  ]
+};
+
+export const CARD_W = 56;
+export const CARD_H = 80;
+export const PAD = 8;
