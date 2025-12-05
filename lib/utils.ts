@@ -1,5 +1,5 @@
-import { translations, runeData } from './constants';
-import { Spread, Language } from './types';
+import { translations } from './constants';
+import { Spread } from './types';
 
 export const getSpreadTypes = (t: typeof translations['en']): Spread[] => [
   { id: 'single-rune', label: t.singleRune, count: 1, positions: [t.positions.guidance] },

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useCallback, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { translations, runeData, CARD_W, CARD_H, PAD } from '@/lib/constants';
 import { getSpreadTypes, clamp, calcMotion } from '@/lib/utils';
 import { Rune, Position, RevealedRune, Mode, Language } from '@/lib/types';
