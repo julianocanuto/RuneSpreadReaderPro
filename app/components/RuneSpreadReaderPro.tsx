@@ -249,11 +249,11 @@ export default function RuneSpreadReaderPro() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-br from-stone-950 via-indigo-950 to-stone-950 text-amber-100 overflow-hidden">
+    <div className="min-h-dvh w-full max-w-screen flex flex-col bg-gradient-to-br from-stone-950 via-indigo-950 to-stone-950 text-amber-100 overflow-x-hidden overflow-y-auto">
       {/* Compact Header Bar */}
-      <header className="flex items-center justify-between px-3 py-2 bg-stone-900/80 border-b border-amber-500/20 flex-shrink-0">
+      <header className="flex flex-wrap items-start sm:items-center justify-between gap-2 px-3 py-2 bg-stone-900/80 border-b border-amber-500/20 flex-shrink-0">
         {/* Left: Title + Spread Selector */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
           <h1 className="text-lg text-amber-400 font-semibold hidden sm:block">{t.appTitle}</h1>
           <h1 className="text-lg text-amber-400 font-semibold sm:hidden">᚛ Runas ᚛</h1>
 
@@ -302,7 +302,7 @@ export default function RuneSpreadReaderPro() {
         </div>
 
         {/* Center: Mode Buttons */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 overflow-x-auto max-w-full px-1">
           {[
             ['shuffle', '🌀', t.shuffleMode],
             ['select', '👆', t.selectMode],
@@ -324,7 +324,7 @@ export default function RuneSpreadReaderPro() {
         </div>
 
         {/* Right: Actions + Language */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap justify-end">
           <button
             onClick={() => setShowDeck(true)}
             className="px-2 py-1.5 bg-stone-800 border border-amber-500/30 rounded text-xs text-amber-300 hover:bg-stone-700"
@@ -357,9 +357,9 @@ export default function RuneSpreadReaderPro() {
       </header>
 
       {/* Main Table Area - Takes maximum space */}
-      <div className="flex-1 flex flex-col p-2 gap-2 min-h-0">
+      <div className="flex-1 flex flex-col p-2 gap-2 min-h-0 min-w-0">
         {/* Instruction + Read Controls - Compact */}
-        <div className="flex items-center justify-center gap-3 flex-shrink-0">
+        <div className="flex items-center justify-center gap-3 flex-wrap text-center px-2 flex-shrink-0">
           <span className="text-xs text-stone-400 bg-stone-900/60 px-3 py-1 rounded-full">
             {getInstruction()}
           </span>
@@ -384,7 +384,7 @@ export default function RuneSpreadReaderPro() {
         {/* Table - Maximum height */}
         <div
           ref={tableRef}
-          className="flex-1 relative rounded-xl overflow-hidden cursor-crosshair"
+          className="flex-1 relative w-full rounded-xl overflow-hidden cursor-crosshair"
           style={{
             background: 'radial-gradient(ellipse at center, #0f5132 0%, #064e3b 50%, #022c22 100%)',
             boxShadow:
@@ -479,7 +479,7 @@ export default function RuneSpreadReaderPro() {
         </div>
 
         {/* Bottom Action Bar - Compact */}
-        <div className="flex items-center justify-center gap-2 flex-shrink-0">
+        <div className="flex items-center justify-center gap-2 flex-wrap flex-shrink-0">
           <button
             onClick={reset}
             className="px-4 py-1.5 bg-rose-900/80 text-rose-200 rounded text-xs font-medium hover:bg-rose-800 transition-colors"
